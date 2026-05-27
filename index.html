@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Hermela Tesfaye — Award-winning Web Developer & Database Administrator"/>
+  <title>Hermela Tesfaye — Web Developer &amp; DBA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-ht">HT</span>
+        <span class="logo-full">Hermela Tesfaye</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"    data-text="About">About</a></li>
+        <li><a href="#awards"   data-text="Awards">Awards</a></li>
+        <li><a href="#skills"   data-text="Skills">Skills</a></li>
+        <li><a href="#projects" data-text="Projects">Projects</a></li>
+        <li><a href="#contact"  data-text="Contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="mailto:hermelatesfayebekele@gmail.com" class="nav-cta">Hire Me</a>
+        <button class="burger" id="burger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#about"    onclick="closeMobile()"><span>01</span>About</a>
+      <a href="#awards"   onclick="closeMobile()"><span>02</span>Awards</a>
+      <a href="#skills"   onclick="closeMobile()"><span>03</span>Skills</a>
+      <a href="#projects" onclick="closeMobile()"><span>04</span>Projects</a>
+      <a href="#contact"  onclick="closeMobile()"><span>05</span>Contact</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section id="hero">
+    <!-- Animated background grid -->
+    <div class="hero-grid"></div>
+    <!-- Glow orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Vertical marquee text -->
+    <div class="hero-vertical-text" aria-hidden="true">DEVELOPER · DATABASE · EXCELLENCE ·&nbsp;</div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="live-dot"></div>
+        <span>Available for Freelance Work</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-line" data-index="0">Web</span>
+        <span class="title-line accent-line" data-index="1">Developer</span>
+        <span class="title-line" data-index="2">&amp; Database</span>
+        <span class="title-line title-stroke" data-index="3">Administrator</span>
+      </h1>
+
+      <p class="hero-sub">
+        Award-winning ICT professional dedicated to engineering robust web applications
+        and optimizing data architectures with <em>absolute accuracy</em>.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-glow">
+          <span>Explore Portfolio</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Contact Me</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>3</strong><span>Awards Won</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <strong>2+</strong><span>Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <strong>12+</strong><span>Technologies</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-index mono">/ 01</span>
+        <h2 class="section-title">About<br/><em>Me</em></h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-text reveal">
+          <p class="about-lead">
+            I am an ambitious developer and database specialist who thrives on combining
+            complex backend logic with seamless user experiences.
+          </p>
+          <p class="about-body">
+            Recognized at both regional and national levels for technical excellence,
+            I bring elite problem-solving, persistence, and flawless attention to detail
+            to every system I architect. My work bridges the gap between raw data and
+            functional, elegant digital products.
+          </p>
+
+          <div class="about-tags">
+            <span>PHP Developer</span>
+            <span>SQL Architect</span>
+            <span>Data Integrity</span>
+            <span>Upwork Freelancer</span>
+          </div>
+        </div>
+
+        <div class="about-metrics reveal reveal-delay-2">
+          <div class="metric-card">
+            <div class="metric-glyph">⬡</div>
+            <strong class="metric-num counter" data-target="3">0</strong>
+            <span>Competition Awards</span>
+          </div>
+          <div class="metric-card">
+            <div class="metric-glyph">⬡</div>
+            <strong class="metric-num">1st</strong>
+            <span>Regional Champion</span>
+          </div>
+          <div class="metric-card">
+            <div class="metric-glyph">⬡</div>
+            <strong class="metric-num counter" data-target="12">0</strong>
+            <span>Technologies</span>
+          </div>
+          <div class="metric-card">
+            <div class="metric-glyph">⬡</div>
+            <strong class="metric-num counter" data-target="2">0</strong>
+            <span>Featured Projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ AWARDS ══════════════ -->
+  <section id="awards" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-index mono">/ 02</span>
+        <h2 class="section-title">National<br/><em>Recognition</em></h2>
+        <p class="section-sub">Awarded at the highest levels of ICT skill competition across Ethiopia.</p>
+      </div>
+
+      <div class="awards-grid">
+
+        <div class="award-card tier-gold reveal">
+          <div class="award-bg-num" aria-hidden="true">02</div>
+          <div class="award-top">
+            <span class="award-medal">🏆</span>
+            <span class="award-tier-label">National · 2nd Place</span>
+          </div>
+          <h3>4th Round National Skill Competition</h3>
+          <p>Web Development &amp; Database Administration — Ministry of Labor and Skills, Federal Democratic Republic of Ethiopia.</p>
+          <div class="award-footer">
+            <span class="award-date mono">May 2025</span>
+            <div class="award-glow-line"></div>
+          </div>
+        </div>
+
+        <div class="award-card tier-blue reveal reveal-delay-1">
+          <div class="award-bg-num" aria-hidden="true">01</div>
+          <div class="award-top">
+            <span class="award-medal">🥇</span>
+            <span class="award-tier-label">Regional · 1st Place Champion</span>
+          </div>
+          <h3>Annual Regional Skill Competition</h3>
+          <p>Oromia Job Creation and Vocational Bureau — Top ranking across all regional competitors in ICT.</p>
+          <div class="award-footer">
+            <span class="award-date mono">April 2025</span>
+            <div class="award-glow-line"></div>
+          </div>
+        </div>
+
+        <div class="award-card tier-bronze reveal reveal-delay-2">
+          <div class="award-bg-num" aria-hidden="true">03</div>
+          <div class="award-top">
+            <span class="award-medal">🥉</span>
+            <span class="award-tier-label">Regional · 3rd Place</span>
+          </div>
+          <h3>Annual Regional Skill Competition</h3>
+          <p>Oromia Job Creation and Vocational Bureau — Demonstrating consistent year-over-year excellence in regional standings.</p>
+          <div class="award-footer">
+            <span class="award-date mono">June 2024</span>
+            <div class="award-glow-line"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SKILLS ══════════════ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-index mono">/ 03</span>
+        <h2 class="section-title">Tech Stack<br/><em>&amp; Skills</em></h2>
+      </div>
+
+      <div class="skills-layout">
+
+        <div class="skill-block reveal">
+          <div class="skill-block-header">
+            <div class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span class="mono skill-cat-label">Web Development</span>
+          </div>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            <span>PHP</span><span>Python (Basic)</span><span>Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-block reveal reveal-delay-1">
+          <div class="skill-block-header">
+            <div class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <span class="mono skill-cat-label">Data &amp; Database</span>
+          </div>
+          <div class="skill-tags">
+            <span>SQL</span><span>Database Optimization</span><span>Database Troubleshooting</span>
+            <span>Data Cleaning</span><span>Data Integrity</span>
+          </div>
+        </div>
+
+        <div class="skill-block reveal reveal-delay-2">
+          <div class="skill-block-header">
+            <div class="skill-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <span class="mono skill-cat-label">Advanced Software</span>
+          </div>
+          <div class="skill-tags">
+            <span>Advanced Excel</span><span>Pivot Tables</span><span>VLOOKUP</span>
+            <span>Microsoft Office Suite</span><span>QuickBooks (Basic)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROJECTS ══════════════ -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-index mono">/ 04</span>
+        <h2 class="section-title">Experience<br/><em>&amp; Projects</em></h2>
+      </div>
+
+      <!-- Experience -->
+      <div class="exp-strip reveal">
+        <div class="exp-label mono">Professional Experience</div>
+        <div class="exp-content">
+          <h3>Data Management &amp; Technical Support Specialist</h3>
+          <span class="exp-company">Andualem Kumbi Automotive Engineering Industry</span>
+          <p>Architected internal database systems, managed merchant ledgers, and streamlined web-based documentation for cross-departmental operational efficiency.</p>
+        </div>
+        <div class="exp-line" aria-hidden="true"></div>
+      </div>
+
+      <!-- Projects -->
+      <div class="projects-grid">
+
+        <!-- Card 01 -->
+        <div class="proj-card reveal reveal-delay-1">
+          <div class="proj-glow"></div>
+          <div class="proj-card-inner">
+
+            <div class="proj-card-top">
+              <div class="proj-number mono">01</div>
+              <div class="proj-icon-badge">
+                <!-- graduation cap icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="proj-stack">
+              <span class="mono">PHP</span>
+              <span class="mono">SQL</span>
+              <span class="mono">HTML5</span>
+              <span class="mono">CSS3</span>
+            </div>
+
+            <div class="proj-content">
+              <h3>Student Management System</h3>
+              <p>A comprehensive web application featuring a secure database architecture designed to manage student enrollments, course allocations, grading matrixes, and academic records seamlessly.</p>
+            </div>
+
+            <div class="proj-features">
+              <span>Student Enrollments</span>
+              <span>Course Allocation</span>
+              <span>Grading Matrix</span>
+              <span>Academic Records</span>
+            </div>
+
+          </div>
+          <div class="proj-footer">
+            <div class="proj-dot-row">
+              <span class="dot-active"></span><span></span><span></span>
+            </div>
+            <a href="#" class="proj-btn-view" target="_blank" rel="noopener">
+              <span>View Project</span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 02 -->
+        <div class="proj-card proj-card-violet reveal reveal-delay-2">
+          <div class="proj-glow proj-glow-violet"></div>
+          <div class="proj-card-inner">
+
+            <div class="proj-card-top">
+              <div class="proj-number mono">02</div>
+              <div class="proj-icon-badge proj-icon-violet">
+                <!-- shield/lock icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="proj-stack proj-stack-violet">
+              <span class="mono">PHP</span>
+              <span class="mono">SQL</span>
+              <span class="mono">Bootstrap</span>
+              <span class="mono">Sessions</span>
+            </div>
+
+            <div class="proj-content">
+              <h3>Authentication Hub</h3>
+              <p class="proj-subtitle">Secure Login &amp; Registration System</p>
+              <p>A robust, standalone authentication system featuring secure user registration, password hashing (bcrypt), and advanced Role-Based Access Control (RBAC) to dynamically route Admins, Teachers, and Students to their respective dashboards.</p>
+            </div>
+
+            <div class="proj-features proj-features-violet">
+              <span>bcrypt Hashing</span>
+              <span>RBAC</span>
+              <span>Session Tokens</span>
+              <span>Multi-Role Routing</span>
+            </div>
+
+          </div>
+          <div class="proj-footer">
+            <div class="proj-dot-row">
+              <span class="dot-active dot-violet"></span><span></span><span></span>
+            </div>
+            <a href="#" class="proj-btn-view proj-btn-violet" target="_blank" rel="noopener">
+              <span>View Project</span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-left reveal">
+          <span class="section-index mono">/ 05</span>
+          <h2 class="section-title contact-title">Let's Build<br/><em>Something</em><br/>Great.</h2>
+          <p class="contact-note">
+            Let's collaborate to build something successful. I bring dedicated focus and
+            national-award-winning expertise to your next project.
+          </p>
+        </div>
+
+        <div class="contact-right reveal reveal-delay-2">
+          <a href="mailto:hermelatesfayebekele@gmail.com" class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="contact-card-label mono">Email</span>
+              <span class="contact-card-val">hermelatesfayebekele@gmail.com</span>
+            </div>
+            <div class="contact-card-arrow">↗</div>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <span class="contact-card-label mono">LinkedIn</span>
+              <span class="contact-card-val">linkedin.com/in/hermela-tesfaye</span>
+            </div>
+            <div class="contact-card-arrow">↗</div>
+          </a>
+
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <span class="contact-card-label mono">GitHub</span>
+              <span class="contact-card-val">github.com/hermela-tesfaye</span>
+            </div>
+            <div class="contact-card-arrow">↗</div>
+          </a>
+
+          <a href="mailto:hermelatesfayebekele@gmail.com" class="btn-glow contact-btn">
+            <span>Send a Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-ht">HT</span>
+        <span>Hermela Tesfaye</span>
+      </div>
+      <p class="mono footer-copy">© 2025 · Built with HTML · CSS · JavaScript</p>
+      <div class="footer-links">
+        <a href="#hero">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
